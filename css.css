@@ -1,15 +1,15 @@
 body {
-    height: 100%;
-    background-color: rgb(84, 117, 184, 1);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /*background-image: linear-gradient(to bottom right, rgb(36, 71, 143) , rgb(132, 163, 225));*/
+  background-color: rgb(77, 77, 77, 1);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#center {
-  margin: 60px 15% 15px;
-  background-color: rgb(51, 95, 230, 1);
-  color: white;
-  border: 2px solid white;
-  border-radius: 10px;
-  position: relative;
+#ViewThings {
+  padding: 6px;
 }
 
 #centerText {
@@ -27,4 +27,9 @@ body {
   100%{
     opacity: 1;
   }
+}
+
+#footer {
+  padding: 1px 0;
+  background-color: rgb(51, 51, 51, 1);
 }
