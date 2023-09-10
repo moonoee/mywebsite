@@ -17,7 +17,7 @@ body {
   background: linear-gradient(to right, rgb(0, 0, 64) , rgb(0, 0, 128));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textfade 2s ease-in 1s;
+  animation: textfade 3s ease-in 0s;
 }
 
 @keyframes textfade {
