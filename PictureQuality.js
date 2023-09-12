@@ -15,18 +15,18 @@ function changePictureQuality() {
     // Abhängig von der Auswahl die Bildquelle ändern
     switch (selectedOption) {
       case "PictureQuality_small":
-        image.src = currentSrc.replace("PNG/medium/", "PNG/small/").replace("PNG/big/", "PNG/small/");
+        image.src = currentSrc.replace("JPEG/small/", "JPEG/small/").replace("JPEG/medium/", "JPEG/small/").replace("JPEG/original/", "JPEG/small/");
         break;
       case "PictureQuality_medium":
-        image.src = currentSrc.replace("PNG/small/", "PNG/medium/").replace("PNG/big/", "PNG/medium/");
+        image.src = currentSrc.replace("JPEG/small/", "JPEG/medium/").replace("JPEG/large/", "JPEG/medium/").replace("JPEG/original/", "JPEG/medium/");
         break;
       case "PictureQuality_big":
-        image.src = currentSrc.replace("PNG/small/", "PNG/big/");
-        image.src = currentSrc.replace("PNG/medium/", "PNG/big/");
-        image.src = currentSrc.replace("PNG/small/", "PNG/big/").replace("PNG/medium/", "PNG/big/");
+        image.src = currentSrc.replace("JPEG/small/", "JPEG/large/").replace("JPEG/medium/", "JPEG/large/").replace("JPEG/original/", "JPEG/large/");
+        break;
+      case "PictureQuality_original":
+        image.src = currentSrc.replace("JPEG/small/", "JPEG/original/").replace("JPEG/medium/", "JPEG/original/").replace("JPEG/large/", "JPEG/original/");
         break;
       case "PictureQuality_dont_Load":
-        // Hier könntest du die Bilder ausblenden oder etwas anderes tun, um sie zu verbergen
         break;
       default:
         break;
