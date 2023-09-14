@@ -15,7 +15,7 @@ function changePictureQuality() {
     // Abhängig von der Auswahl die Bildquelle ändern
     switch (selectedOption) {
       case "PictureQuality_small":
-        image.src = currentSrc.replace("JPEG/small/", "JPEG/small/").replace("JPEG/medium/", "JPEG/small/").replace("JPEG/original/", "JPEG/small/");
+        image.src = currentSrc.replace("JPEG/medium/", "JPEG/small/").replace("JPEG/large/", "JPEG/small/").replace("JPEG/original/", "JPEG/small/");
         break;
       case "PictureQuality_medium":
         image.src = currentSrc.replace("JPEG/small/", "JPEG/medium/").replace("JPEG/large/", "JPEG/medium/").replace("JPEG/original/", "JPEG/medium/");

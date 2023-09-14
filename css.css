@@ -12,6 +12,13 @@ body {
   padding: 6px;
 }
 
+#TopText {
+  margin: 0.5%;
+  width: 99%;
+  border-radius: 5px;
+  background-color: grey;
+}
+
 #centerText {
   text-align: center;
   background: linear-gradient(to right, rgb(0, 0, 64) , rgb(0, 0, 128));
@@ -35,8 +42,21 @@ body {
 }
 
 img {
+  margin-left: 0.3%;
   border-radius: 10px;
   border: 2px solid white;
-  max-width: 100%;
+  max-width: 99%;
   min-width: 25%;
+  animation: imagefade 5s ease-in 0s;
+}
+
+@keyframes imagefade {
+  0%{
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100%{
+    opacity: 1;
+    filter: blur(0px);
+  }
 }
