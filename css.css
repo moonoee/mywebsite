@@ -8,8 +8,92 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Desktop-Ansicht */
+@media (min-width: 638px) {
+  #desk {
+    display: block;
+  }
+  #mobile {
+    display: none;
+  }
+}
+
+/* Mobile Ansicht */
+@media (max-width: 637px) {
+  #desk {
+    display: none;
+  }
+  #mobile {
+    display: block;
+  }
+}
+
+#navbutton{
+  color: midnightblue;
+  background-color: grey;
+  border-radius: 8px;
+  border-color: grey;
+  outline-color: grey;
+}
+
 #ViewThings {
   padding: 6px;
+}
+
+.navbardesk{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  max-height: 20px;
+  margin-top: 10px;
+  margin-left: 1.5%;
+  background-color: rgb(128, 128, 128, 0.8);
+  padding: 6px;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 15;
+}
+
+.navbarmobile{
+  display: block;
+  width: 95%;
+  max-height: 80%;
+  margin: 4% auto;
+  background-color: rgb(128, 128, 128, 0.7);
+  padding: 2px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+nav ul{
+  display: flex;
+}
+
+.nav-list a{
+  text-decoration: none;
+  color: rgb(0, 0, 192, 1.0);
+  transition: 0.5s;
+}
+
+.nav-list li{
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav-list a:hover{
+  color: rgb(0, 0, 64, 1.0);
+}
+
+li a:hover {
+  background-color: lightgray;
+  color: midnightblue;
+  margin: 5px;
+  padding: 5px;
+  height: 10px;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
 }
 
 #TopText {
@@ -20,6 +104,14 @@ body {
 }
 
 #centerText {
+  text-align: center;
+  background: linear-gradient(to right, rgb(0, 0, 64) , rgb(0, 0, 128));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textfade 3s ease-in 0s;
+}
+
+#centerTextMobile {
   text-align: center;
   background: linear-gradient(to right, rgb(0, 0, 64) , rgb(0, 0, 128));
   -webkit-background-clip: text;
@@ -50,25 +142,30 @@ img {
   animation: imagefade 4s ease-in 0s;
 }
 
+a {
+  color: midnightblue;
+}
+
 .image-container {
     position: relative;
     display: inline-block;
 }
 
 .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 98%;
-    background-color: rgba(255, 255, 255, 0.8); /* Weißes Overlay mit Transparenz */
-    opacity: 0; /* Das Overlay zu Beginn ausblenden */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s; /* Animationseffekt für das Ein- und Ausblenden */
-    border-radius: 10px;
+  margin-left: 0.3%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Weißes Overlay mit Transparenz */
+  opacity: 0; /* Das Overlay zu Beginn ausblenden */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s; /* Animationseffekt für das Ein- und Ausblenden */
+  border-radius: 10px;
 }
 
 .image-text {

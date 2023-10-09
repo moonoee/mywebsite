@@ -36,5 +36,3 @@ function changePictureQuality() {
 
 // Event-Listener, um die Funktion beim Ändern der Auswahl aufzurufen
 document.getElementById("pictureQualitySelect").addEventListener("change", changePictureQuality);
-
-
