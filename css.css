@@ -118,7 +118,7 @@ li a:hover {
 
 #centerTextMobile {
   text-align: center;
-  background: linear-gradient(to right, rgb(0, 0, 64) , rgb(0, 0, 128));
+  background: whitesmoke;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textfade 3s ease-in 0s;
