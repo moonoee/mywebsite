@@ -2,9 +2,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  /*background-image: linear-gradient(to bottom right, rgb(36, 71, 143) , rgb(132, 163, 225));*/
-  background-color: rgb(77, 77, 77, 1);
-  color: white;
+  background-color: #2D4A53;
+  color: ghostwhite;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,6 +15,9 @@ body {
   #mobile {
     display: none;
   }
+  .image-container {
+    width: 23.5%;
+  }
 }
 
 /* Mobile Ansicht */
@@ -25,6 +27,9 @@ body {
   }
   #mobile {
     display: block;
+  }
+  .image-container {
+    width: 45%;
   }
 }
 
@@ -48,7 +53,7 @@ body {
   max-height: 20px;
   margin-top: 10px;
   margin-left: 1.5%;
-  background-color: rgb(128, 128, 128, 0.8);
+  background-color: #132E35;
   padding: 6px;
   align-items: center;
   border-radius: 5px;
@@ -60,7 +65,7 @@ body {
   width: 95%;
   max-height: 80%;
   margin: 4% auto;
-  background-color: rgb(128, 128, 128, 0.7);
+  background-color: #132E35;
   padding: 2px;
   align-items: center;
   border-radius: 5px;
@@ -72,7 +77,7 @@ nav ul{
 
 .nav-list a{
   text-decoration: none;
-  color: rgb(0, 0, 192, 1.0);
+  color: whitesmoke;
   transition: 0.5s;
 }
 
@@ -81,13 +86,13 @@ nav ul{
   margin-right: 20px;
 }
 
-.nav-list a:hover{
+/*.nav-list a:hover{
   color: rgb(0, 0, 64, 1.0);
-}
+}*/
 
 li a:hover {
-  background-color: lightgray;
-  color: midnightblue;
+  background-color: #0D1F23;
+  color: whitesmoke;
   margin: 5px;
   padding: 5px;
   height: 10px;
@@ -105,7 +110,7 @@ li a:hover {
 
 #centerText {
   text-align: center;
-  background: linear-gradient(to right, rgb(0, 0, 64) , rgb(0, 0, 128));
+  background: whitesmoke;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textfade 3s ease-in 0s;
@@ -130,26 +135,39 @@ li a:hover {
 
 #footer {
   padding: 1px 0;
-  background-color: rgb(51, 51, 51, 1);
-}
-
-img {
-  margin-left: 0.3%;
-  border-radius: 10px;
-  border: 2px solid white;
-  max-width: 99%;
-  min-width: 25%;
-  animation: imagefade 4s ease-in 0s;
+  background-color: #0D1F23;
 }
 
 a {
   color: midnightblue;
 }
 
-.image-container {
-    position: relative;
-    display: inline-block;
+.img-container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.image-container {
+  border-radius: 10px;
+  background-color: #A9BDA1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*padding: 10px 10px;*/
+  margin: 4px;
+}
+
+/*.img-container img {
+  opacity: 1;
+  border-radius: 10px;
+  border: 2px solid white;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 5px 5px;
+  margin-left: 0.3%;
+}*/
 
 .image-overlay {
   margin-left: 0.3%;
